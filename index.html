@@ -51,4 +51,9 @@
     </a-nft>
     <a-entity camera></a-entity>
   </a-scene>
+    <script>
+    document.querySelector('a-scene').addEventListener('loaded', () => {
+      document.querySelector('.arjs-loader').style.display = 'none';
+    });
+  </script>
 </body>
